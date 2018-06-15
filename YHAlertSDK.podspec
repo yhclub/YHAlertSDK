@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.dependency     "SVProgressHUD", "2.1.2"
 
-  s.dependency     "YHCategorySDK", "1.0.0"
+  s.dependency     "YHCategorySDK", "1.0.1"
 
   s.vendored_frameworks = ["Frameworks/*.framework"]
   
