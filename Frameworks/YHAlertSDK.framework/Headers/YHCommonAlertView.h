@@ -11,6 +11,7 @@
 
 #define ShowLoading(msg) [YHCommonAlertView showLoading:msg];
 #define ShowMsg(msg) [YHCommonAlertView showAlert:msg];
+#define showWarmingAlert(msg) [YHCommonAlertView showWarmingAlert:msg];
 #define ShowFailedMsg(msg) [YHCommonAlertView showFailedAlert:msg];
 #define ShowSuccessedMsg(msg) [YHCommonAlertView showSuccedAlert:msg];
 #define YHDismissLoadingView [YHCommonAlertView dismiss];
@@ -38,6 +39,13 @@ typedef NS_ENUM(NSInteger, YHCommonAnimationType)
 @protocol YHCommonAlertviewDelegate <NSObject>
     
 @optional
+
+/**
+ 按钮点击代理事件
+ 
+ @param commonAlertView 弹窗视图
+ @param buttonIndex 按钮的index. default rightButton is 0，leftButton is 1
+ */
 - (void)commonAlertView:(YHCommonAlertView *)commonAlertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 /**
@@ -66,7 +74,9 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 +(void)showCommonAlert:(NSString *)message afterDelay:(NSTimeInterval)interval wityType:(YHCommonAlertType)type;
     
 +(void)showAlert:(NSString *)message;
-    
+
++(void)showWarmingAlert:(NSString *)message;
+
 +(void)showFailedAlert:(NSString *)message;
     
 +(void)showSuccedAlert:(NSString *)message;
@@ -108,7 +118,9 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 @property(nonatomic,strong)UIButton *leftBtn;//左按钮
     
 @property(nonatomic,strong)UIButton *rightBtn;//右按钮
-    
+
+@property(nonatomic,assign,getter=isPassiveDismiss) BOOL passiveDismiss;//点击按钮之后是否消失.default NO.
+
 @property(nonatomic,copy)YHBtnIndexBlock buttonClickBlock;
     
 @property(nonatomic,weak)id<YHCommonAlertviewDelegate> delegate;

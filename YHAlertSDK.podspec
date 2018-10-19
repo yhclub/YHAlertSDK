@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHAlertSDK"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "YHAlertSDK is only a alert sdk"
 
   s.description  = "YHNetSDK is only a base common alert sdk, incluse svp,label alert"
