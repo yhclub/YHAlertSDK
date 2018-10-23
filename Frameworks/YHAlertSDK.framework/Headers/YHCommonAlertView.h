@@ -69,7 +69,14 @@ typedef NS_ENUM(NSInteger, YHCommonAnimationType)
 
 typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 
-@interface YHCommonAlertView : UIView <UITextFieldDelegate>
+
+
+/**
+ *
+ *  通用弹窗视图
+ *
+ */
+@interface YHCommonAlertView : UIView
 
 +(void)showCommonAlert:(NSString *)message afterDelay:(NSTimeInterval)interval wityType:(YHCommonAlertType)type;
     
@@ -87,12 +94,6 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
     
 #pragma mark init commonalertview
 
-@property(nonatomic,strong)UIView *middleView;
-    
-@property(nonatomic,strong)UIView *mainView;
-    
-@property(nonatomic,strong)UIView *bgView;
-    
 @property(nonatomic,copy)NSString *title;//标题标签
 
 @property(nonatomic,copy)NSString *message;//消息标签
@@ -100,13 +101,7 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 @property(nonatomic,copy)NSString *placeholder;//输入框提示标签
     
 @property(nonatomic,strong)NSMutableAttributedString *messageAttribute;//消息富文本
-    
-@property(nonatomic,strong)UILabel *titleLabel;//标题标签
-    
-@property(nonatomic,strong)UILabel *messageLabel;//消息标签
 
-@property(nonatomic,strong)UITextField *inputTextField;//输入框
-    
 @property(nonatomic,assign)BOOL hiddenTitle;//是否隐藏标题
 
 @property(nonatomic,assign)BOOL showInput;//是否显示输入框
@@ -114,10 +109,6 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 @property(nonatomic,copy)NSString *leftBtnTitle;//左边按钮标题
     
 @property(nonatomic,copy)NSString *rightBtnTitle;//右边按钮标题
-    
-@property(nonatomic,strong)UIButton *leftBtn;//左按钮
-    
-@property(nonatomic,strong)UIButton *rightBtn;//右按钮
 
 @property(nonatomic,assign,getter=isPassiveDismiss) BOOL passiveDismiss;//点击按钮之后是否消失.default NO.
 
@@ -128,7 +119,16 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 @property(nonatomic,assign)YHCommonAnimationType animationType;//动画类型 方便以后拓展
     
 @property(nonatomic,assign)CGFloat topOffSet;//可设置弹窗移动距离 负数即向下移
-    
+
+
+/**
+ * 单例
+ */
++ (id)sharedInstance;
+
+/**
+ * 初始化(init)
+ */
 -(id)initWithTitle:(NSString *)title withMessage:(id)message  withLeftBtnTitle:(NSString *)leftBtnTitle withRightBtnTitle:(NSString *)rightBtnTitle;
     
 -(id)initWithTitle:(NSString *)title withMessage:(id)message  withLeftBtnTitle:(NSString *)leftBtnTitle withRightBtnTitle:(NSString *)rightBtnTitle withDelegate:(id<YHCommonAlertviewDelegate>) delegate;
@@ -136,12 +136,26 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 -(id)initWithTitle:(NSString *)title withMessage:(id)message withLeftBtnTitle:(NSString *)leftBtnTitle withRightBtnTitle:(NSString *)rightBtnTitle withButtonBlock:(YHBtnIndexBlock)block;
 
 -(id)initWithTitle:(NSString *)title withPlaceholder:(NSString *)placeholder  withLeftBtnTitle:(NSString *)leftBtnTitle withRightBtnTitle:(NSString *)rightBtnTitle withDelegate:(id<YHCommonAlertviewDelegate>) delegate;
-    
--(void)setButtonClickBlock:(YHBtnIndexBlock)buttonClickBlock;
-    
+
+
+
+
+
+/**
+ * 显示界面(add to keyWindow)
+ */
 -(void)showView;
-    
+
+/**
+ * 显示界面(add to superview)
+ */
 -(void)showViewInSuperview:(UIView *)superview;
-    
+
+
+/**
+ * 关闭界面(removeFromSuperview)
+ */
 -(void)dismissView;
+
+
 @end
