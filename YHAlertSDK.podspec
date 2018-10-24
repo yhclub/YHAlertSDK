@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency     "SVProgressHUD", "2.1.2"
+  s.dependency     "SVProgressHUD", "2.2.5"
 
-  s.dependency     "YHCategorySDK", "1.0.1"
+  s.dependency     "YHCategorySDK"
 
   s.vendored_frameworks = ["Frameworks/*.framework"]
   
