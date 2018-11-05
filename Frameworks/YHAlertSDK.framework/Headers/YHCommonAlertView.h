@@ -122,6 +122,17 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 @property(nonatomic,assign)CGFloat topOffSet;//可设置弹窗移动距离 负数即向下移
 
 
+@property(nonatomic,strong)UILabel *titleLabel;//标题标签
+
+@property(nonatomic,strong)UILabel *messageLabel;//消息标签
+
+@property(nonatomic,strong)UITextField *inputTextField;//输入框
+
+@property(nonatomic,strong)UIButton *leftBtn;//左按钮
+
+@property(nonatomic,strong)UIButton *rightBtn;//右按钮
+
+
 /**
  * 单例
  */
