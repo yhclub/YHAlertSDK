@@ -1,7 +1,7 @@
 //
 //  YHAlertSDK.h
 //  YHAlertSDK
-//  V 1.0.5
+//  V 1.0.6
 //  Created by zxl on 2018/3/14.
 //  Copyright © 2018年 YH. All rights reserved.
 //
@@ -15,8 +15,6 @@ FOUNDATION_EXPORT double YHAlertSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char YHAlertSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <YHAlertSDK/PublicHeader.h>
-
-#import <YHAlertSDK/YHAlertSDKTest.h>
 
 #import <YHAlertSDK/YHCommonAlertView.h>
 

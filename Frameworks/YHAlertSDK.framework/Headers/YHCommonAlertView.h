@@ -128,9 +128,9 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 
 @property(nonatomic,strong)UITextField *inputTextField;//输入框
 
-@property(nonatomic,strong)UIButton *leftBtn;//左按钮
+@property(nonatomic,strong)UIButton *leftBtn;//左按钮 默认tag为1
 
-@property(nonatomic,strong)UIButton *rightBtn;//右按钮
+@property(nonatomic,strong)UIButton *rightBtn;//右按钮 默认tag为0，bgView的tag为-1
 
 
 /**
