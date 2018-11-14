@@ -132,6 +132,15 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 
 @property(nonatomic,strong)UIButton *rightBtn;//右按钮 默认tag为0，bgView的tag为-1
 
+@property(nonatomic,strong)UIView *middleView;
+
+@property(nonatomic,strong)UIView *mainView;
+
+@property(nonatomic,strong)UIView *bgView;
+
+@property(nonatomic,assign)BOOL isShow;
+
+@property(nonatomic,assign)BOOL isAnimating;//正在显示动画中
 
 /**
  * 单例

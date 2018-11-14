@@ -1,9 +1,8 @@
 //
 //  YHAlertSDK.h
 //  YHAlertSDK
-//  V 1.0.6
+//  V 1.0.7
 //  Created by zxl on 2018/3/14.
-//  Modify by ljt on 2018/11/07.
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
