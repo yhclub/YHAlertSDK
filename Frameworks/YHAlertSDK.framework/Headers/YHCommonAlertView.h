@@ -60,8 +60,6 @@ typedef NS_ENUM(NSInteger, YHCommonAnimationType)
 
 /**
  获取中间视图的高度
-
- @param commonAlertView
  @return height
  */
 -(CGFloat)heightForMiddleViewInCommonAlertView:(YHCommonAlertView *)commonAlertView;
@@ -119,8 +117,7 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
     
 @property(nonatomic,assign)YHCommonAnimationType animationType;//动画类型 方便以后拓展
     
-@property(nonatomic,assign)CGFloat topOffSet;//可设置弹窗移动距离 负数即向下移
-
+@property(nonatomic,assign)CGFloat topOffSet;//可设置弹窗移动距离 正数即向下移
 
 @property(nonatomic,strong)UILabel *titleLabel;//标题标签
 
@@ -159,7 +156,7 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
 -(id)initWithTitle:(NSString *)title withPlaceholder:(NSString *)placeholder  withLeftBtnTitle:(NSString *)leftBtnTitle withRightBtnTitle:(NSString *)rightBtnTitle withDelegate:(id<YHCommonAlertviewDelegate>) delegate;
 
 
-
+-(void)setDataWithTitle:(NSString *)title withMessage:(id)message withLeftBtnTitle:(NSString *)leftBtnTitle withRightBtnTitle:(NSString *)rightBtnTitle withPlaceholder:(NSString *)placeholder;
 
 
 /**
@@ -177,6 +174,5 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
  * 关闭界面(removeFromSuperview)
  */
 -(void)dismissView;
-
 
 @end
