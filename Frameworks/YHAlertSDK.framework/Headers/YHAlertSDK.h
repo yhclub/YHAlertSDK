@@ -22,5 +22,5 @@ FOUNDATION_EXPORT const unsigned char YHAlertSDKVersionString[];
 
 #import <YHAlertSDK/YHLabelAlertView.h>
 
-#import <YHAlertSDK/YHLoadingAlertView.h>
+#import <YHAlertSDK/YHLoadingView.h>
 
