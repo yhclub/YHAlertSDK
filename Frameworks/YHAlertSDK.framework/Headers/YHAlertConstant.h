@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#define YHISIMPORTSVP  0
 
 @interface YHAlertConstant : NSObject
 
@@ -35,5 +38,11 @@ FOUNDATION_EXPORT NSString *YHAlertTextColorGrayHexString;
 FOUNDATION_EXPORT NSString *YHAlertTextColorLightGrayHexString;
 FOUNDATION_EXPORT NSString *YHAlertTextColorWhiteHexString;
 
+//默认toast持续时长2.2秒
+FOUNDATION_EXPORT CGFloat YHCommonAlertDurationDefault;
+FOUNDATION_EXPORT CGFloat YHCommonAlertDurationLoading;//加载中..120s
+FOUNDATION_EXPORT CGFloat YHCommonAlertDurationSuccess;//成功提示框
+FOUNDATION_EXPORT CGFloat YHCommonAlertDurationFailed;//错误提示框
+FOUNDATION_EXPORT CGFloat YHCommonAlertDurationWarming;//警告提示框
 
 @end

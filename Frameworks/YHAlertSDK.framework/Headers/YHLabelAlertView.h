@@ -10,8 +10,8 @@
 
 
 typedef NS_ENUM(NSInteger, YHLabelAlertType) {
-    YHLabelAlertTypeBlue = 0,//蓝
-    YHLabelAlertTypePink = 1,//粉
+    YHLabelAlertTypeBlue = 0,//蓝 提示色
+    YHLabelAlertTypePink = 1,//粉 警示色
     YHLabelAlertTypeGreen = 2//绿
 };
 
@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
 
 @property(nonatomic,strong)NSMutableAttributedString *attributeText;//消息富文本
 
+@property(nonatomic,assign)BOOL isLoading;//加载中..
 
 
 /**
@@ -68,10 +69,16 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
 -(void)dismissView;
 
 
+-(void)startLoading;
+
+-(void)stopLoading;
+
 /**
  延迟隐藏掉
 
  @param interval 秒
  */
 -(void)dismissViewAfterDelay:(NSTimeInterval)interval;
+
+
 @end

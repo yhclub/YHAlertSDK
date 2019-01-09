@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHAlertSDK"
-  s.version      = "1.0.8"
+  s.version      = "1.0.9" 
   s.summary      = "YHAlertSDK is only a alert sdk"
 
   s.description  = "YHNetSDK is only a base common alert sdk, incluse svp,label alert"
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency     "SVProgressHUD", "~> 2.1"
+#  s.dependency     "SVProgressHUD", "~> 2.1"
 
   s.dependency     "YHCategorySDK"
 

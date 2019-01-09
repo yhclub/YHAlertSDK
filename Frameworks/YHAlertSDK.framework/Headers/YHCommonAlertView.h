@@ -10,21 +10,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define ShowLoading(msg) [YHCommonAlertView showLoading:msg];
-#define ShowMsg(msg) [YHCommonAlertView showAlert:msg];
-#define showWarmingAlert(msg) [YHCommonAlertView showWarmingAlert:msg];
-#define ShowFailedMsg(msg) [YHCommonAlertView showFailedAlert:msg];
-#define ShowSuccessedMsg(msg) [YHCommonAlertView showSuccedAlert:msg];
-#define YHDismissLoadingView [YHCommonAlertView dismiss];
-
-typedef NS_ENUM(NSInteger, YHCommonAlertType) {
-    YHCommonAlertTypeDefault = 0,//Toast
-    YHCommonAlertTypeLoading = 1,//加载中
-    YHCommonAlertTypeSuccess = 2,//成功提示框
-    YHCommonAlertTypeFailed  = 3,//错误提示框
-    YHCommonAlertTypeWarming = 4 //警告提示框
-};
-
 typedef NS_ENUM(NSInteger, YHCommonAnimationType)
 {
     YHCommonAnimationTypeDefault = 0,//无动画
@@ -77,20 +62,6 @@ typedef void(^YHBtnIndexBlock)(NSInteger buttonIndex);
  */
 @interface YHCommonAlertView : UIView
 
-+(void)showCommonAlert:(NSString *)message afterDelay:(NSTimeInterval)interval wityType:(YHCommonAlertType)type;
-    
-+(void)showAlert:(NSString *)message;
-
-+(void)showWarmingAlert:(NSString *)message;
-
-+(void)showFailedAlert:(NSString *)message;
-    
-+(void)showSuccedAlert:(NSString *)message;
-    
-+(void)showLoading:(NSString *)message;
-    
-+(void)dismiss;
-    
 #pragma mark init commonalertview
 
 @property(nonatomic,copy)NSString *title;//标题标签
