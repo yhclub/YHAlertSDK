@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YHAlertConstant.h"
 
 
 typedef NS_ENUM(NSInteger, YHLabelAlertType) {
@@ -23,6 +24,8 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
 
 @property(nonatomic,strong)NSMutableAttributedString *attributeText;//消息富文本
 
+@property(nonatomic,assign)BOOL isShow;
+
 @property(nonatomic,assign)BOOL isLoading;//加载中..
 
 
@@ -31,23 +34,16 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
 
  @return id
  */
-+ (id)sharedInstance;
++ (instancetype)sharedInstance;
+
+//自定义
++(void)showCommonAlert:(NSString *)message afterDelay:(NSTimeInterval)interval wityType:(YHCommonAlertType)type;
 
 /**
- 初始化普通文本
-
- @param text 普通文本
- @return id
+ 刷新界面, 设置text、type后必须调用
+ 刷新后默认isLoading=NO
  */
--(id)initWithText:(NSString *)text;
-
-/**
- 初始化富文本
-
- @param attributeText 富文本
- @return id
- */
--(id)initWithAttributeText:(NSMutableAttributedString *)attributeText;
+-(void)refreshView;
 
 
 /**
@@ -55,30 +51,24 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
  */
 -(void)showView;
 
-
 /**
  显示在指定视图
-
+ 
  @param superview 指定视图
  */
 -(void)showViewInSuperview:(UIView *)superview;
 
 /**
- 隐藏
- */
--(void)dismissView;
-
-
--(void)startLoading;
-
--(void)stopLoading;
-
-/**
  延迟隐藏掉
-
  @param interval 秒
  */
 -(void)dismissViewAfterDelay:(NSTimeInterval)interval;
+
+/**
+ 直接隐藏
+ */
+-(void)dismissView;
+
 
 
 @end

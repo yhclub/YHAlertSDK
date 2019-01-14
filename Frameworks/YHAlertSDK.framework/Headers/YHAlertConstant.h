@@ -45,4 +45,20 @@ FOUNDATION_EXPORT CGFloat YHCommonAlertDurationSuccess;//成功提示框
 FOUNDATION_EXPORT CGFloat YHCommonAlertDurationFailed;//错误提示框
 FOUNDATION_EXPORT CGFloat YHCommonAlertDurationWarming;//警告提示框
 
+typedef NS_ENUM(NSInteger, YHCommonAlertType) {
+    YHCommonAlertTypeDefault = 0,//Toast
+    YHCommonAlertTypeLoading = 1,//加载中
+    YHCommonAlertTypeSuccess = 2,//成功提示框
+    YHCommonAlertTypeFailed  = 3,//错误提示框
+    YHCommonAlertTypeWarming = 4 //警告提示框
+};
+
+#define ShowMsg(msg)            [YHCommonHUD showAlert:msg];
+#define showWarmingAlert(msg)   [YHCommonHUD showWarmingAlert:msg];
+#define ShowFailedMsg(msg)      [YHCommonHUD showFailedAlert:msg];
+#define ShowSuccessedMsg(msg)   [YHCommonHUD showSuccedAlert:msg];
+
+#define ShowLoading(msg)        [YHCommonHUD showLoading:msg];
+#define YHDismissLoadingView    [YHCommonHUD dismiss];
+
 @end

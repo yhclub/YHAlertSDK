@@ -7,22 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#define ShowMsg(msg)            [YHCommonHUD showAlert:msg];
-#define showWarmingAlert(msg)   [YHCommonHUD showWarmingAlert:msg];
-#define ShowFailedMsg(msg)      [YHCommonHUD showFailedAlert:msg];
-#define ShowSuccessedMsg(msg)   [YHCommonHUD showSuccedAlert:msg];
-
-#define ShowLoading(msg)        [YHCommonHUD showLoading:msg];
-#define YHDismissLoadingView    [YHCommonHUD dismiss];
-
-typedef NS_ENUM(NSInteger, YHCommonAlertType) {
-    YHCommonAlertTypeDefault = 0,//Toast
-    YHCommonAlertTypeLoading = 1,//加载中
-    YHCommonAlertTypeSuccess = 2,//成功提示框
-    YHCommonAlertTypeFailed  = 3,//错误提示框
-    YHCommonAlertTypeWarming = 4 //警告提示框
-};
+#import "YHAlertConstant.h"
 
 @interface YHCommonHUD : NSObject
 

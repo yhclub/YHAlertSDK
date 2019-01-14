@@ -32,6 +32,11 @@
 
 -(instancetype)initWithHiddleWhenStop:(BOOL)hiddleWhenStop;
 
+-(void)showView;
+
+-(void)dismissView;
+
+-(void)showViewInSuperview:(UIView *)superview;
 
 @end
 
