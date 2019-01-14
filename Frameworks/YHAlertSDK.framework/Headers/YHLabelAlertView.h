@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
 
 @property(nonatomic,assign)BOOL isLoading;//加载中..
 
+@property(nonatomic,copy)NSString *leftImageName;//左边logo图标
 
 /**
  单例

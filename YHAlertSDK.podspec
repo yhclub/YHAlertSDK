@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/XmYlzYhkj/YHAlertSDK.git", :tag => s.version.to_s }
 
-  #s.resources    = 'Resources/*.bundle'
+  s.resources    = 'Resources/*.bundle'
 
   #s.source_files  = "Classes", "Classes/*"
 

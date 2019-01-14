@@ -38,6 +38,9 @@ FOUNDATION_EXPORT NSString *YHAlertTextColorGrayHexString;
 FOUNDATION_EXPORT NSString *YHAlertTextColorLightGrayHexString;
 FOUNDATION_EXPORT NSString *YHAlertTextColorWhiteHexString;
 
+FOUNDATION_EXPORT NSString *YHAlertErrorImageNameString;
+FOUNDATION_EXPORT NSString *YHAlertSuccessImageNameString;
+
 //默认toast持续时长2.2秒
 FOUNDATION_EXPORT CGFloat YHCommonAlertDurationDefault;
 FOUNDATION_EXPORT CGFloat YHCommonAlertDurationLoading;//加载中..120s
