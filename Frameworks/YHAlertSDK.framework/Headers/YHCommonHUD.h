@@ -21,6 +21,8 @@
 
 +(void)showLoading:(NSString *)message;
 
++(void)dismissLoading;
+
 +(void)dismiss;
 
 

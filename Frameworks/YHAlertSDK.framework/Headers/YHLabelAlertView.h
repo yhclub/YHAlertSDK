@@ -20,6 +20,8 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
 
 @property(nonatomic,assign)YHLabelAlertType type;//样式类型
 
+@property(nonatomic,assign)BOOL isMultipleShow;//是否支持多个显示
+
 @property(nonatomic,copy)NSString *text;//普通文本
 
 @property(nonatomic,strong)NSMutableAttributedString *attributeText;//消息富文本
@@ -70,6 +72,8 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
  */
 -(void)dismissView;
 
+
+-(void)dismissLoadingView;
 
 
 @end
