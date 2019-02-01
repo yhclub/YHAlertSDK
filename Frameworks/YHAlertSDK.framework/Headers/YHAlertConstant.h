@@ -44,9 +44,6 @@ FOUNDATION_EXPORT NSString *YHAlertSuccessImageNameString;
 //默认toast持续时长2.2秒
 FOUNDATION_EXPORT CGFloat YHCommonAlertDurationDefault;
 FOUNDATION_EXPORT CGFloat YHCommonAlertDurationLoading;//加载中..120s
-FOUNDATION_EXPORT CGFloat YHCommonAlertDurationSuccess;//成功提示框
-FOUNDATION_EXPORT CGFloat YHCommonAlertDurationFailed;//错误提示框
-FOUNDATION_EXPORT CGFloat YHCommonAlertDurationWarming;//警告提示框
 
 typedef NS_ENUM(NSInteger, YHCommonAlertType) {
     YHCommonAlertTypeDefault = 0,//Toast

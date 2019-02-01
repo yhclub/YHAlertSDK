@@ -28,4 +28,6 @@
 
 +(void)showCommonAlert:(NSString *)message afterDelay:(NSTimeInterval)interval wityType:(YHCommonAlertType)type;
 
++(NSTimeInterval)getTimeIntervalByWordCount:(NSInteger)count;
+
 @end
