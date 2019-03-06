@@ -27,9 +27,11 @@ FOUNDATION_EXPORT NSString *YHAlertColorSecondaryHexString;
 FOUNDATION_EXPORT NSString *YHAlertColorSecondaryGrayHexString;
 
 //按钮颜色辅色
+FOUNDATION_EXPORT CGFloat   YHAlertDestructiveButtonCornerRadius;
 FOUNDATION_EXPORT NSString *YHAlertColorDestructiveHexString;
 FOUNDATION_EXPORT NSString *YHAlertColorDestructiveBgHexString;
 
+FOUNDATION_EXPORT CGFloat   YHAlertCancelButtonCornerRadius;
 FOUNDATION_EXPORT NSString *YHAlertColorCancelHexString;
 FOUNDATION_EXPORT NSString *YHAlertColorCancelBgHexString;
 
@@ -59,6 +61,7 @@ typedef NS_ENUM(NSInteger, YHCommonAlertType) {
 #define ShowSuccessedMsg(msg)   [YHCommonHUD showSuccedAlert:msg];
 
 #define ShowLoading(msg)        [YHCommonHUD showLoading:msg];
+#define ShowClearLoading(msg)   [YHCommonHUD showClearLoading:msg];
 #define YHDismissLoading()      [YHCommonHUD dismissLoading];
 #define YHDismissLoadingView    [YHCommonHUD dismissLoading];
 
