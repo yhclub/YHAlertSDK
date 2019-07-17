@@ -1,9 +1,8 @@
 //
 //  YHAlertSDK.h
 //  YHAlertSDK
-//  V 1.0.9
-//  Created by zxl on 2018/3/14.
-//  Modify by jagtu on 2019/2/28.
+//  V 1.1.9
+//  2019/7/17 修复弹出提示消失过快、不自动消失
 //  Copyright © 2018年 YH. All rights reserved.
 //
 

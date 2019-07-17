@@ -9,12 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "YHAlertConstant.h"
 
-typedef NS_ENUM(NSUInteger, YHCommonHUDMaskType) {
-    YHCommonHUDMaskTypeNone = 1,  // default mask type, allow user interactions while HUD is displayed
-    YHCommonHUDMaskTypeClear,     // don't allow user interactions with background objects
-    YHCommonHUDMaskTypeBlack
-};
-
 @interface YHCommonHUD : NSObject
 
 +(void)showAlert:(NSString *)message;
@@ -27,13 +21,10 @@ typedef NS_ENUM(NSUInteger, YHCommonHUDMaskType) {
 
 +(void)showLoading:(NSString *)message;
 
-+(void)showClearLoading:(NSString *)message;
-
 +(void)dismissLoading;
 
 +(void)dismiss;
 
-+(void)setDefaultMaskType:(YHCommonHUDMaskType)maskType;
 
 +(void)showCommonAlert:(NSString *)message afterDelay:(NSTimeInterval)interval wityType:(YHCommonAlertType)type;
 
