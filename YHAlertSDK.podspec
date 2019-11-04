@@ -30,14 +30,14 @@ Pod::Spec.new do |s|
   # Default
   s.subspec 'Default' do |sp|
 	
-    sp.vendored_frameworks = ["Frameworks/YHAlertSDK.framework"]
+    sp.vendored_frameworks = ["Frameworks/Default/*.framework"]
 
   end
 
   # SVP
   s.subspec 'SVP' do |sp|
 	
-    sp.vendored_frameworks = ["Frameworks/YHSVPAlertSDK.framework"]
+    sp.vendored_frameworks = ["Frameworks/SVP/*.framework"]
 
     sp.dependency     "SVProgressHUD", "~> 2.1"
 
