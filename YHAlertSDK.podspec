@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHAlertSDK"
-  s.version      = "1.1.9" 
+  s.version      = "1.2.0" 
   s.summary      = "YHAlertSDK is only a alert sdk"
 
   s.description  = "YHNetSDK is only a base common alert sdk, incluse svp,label alert"
@@ -23,10 +23,24 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-#  s.dependency     "SVProgressHUD", "~> 2.1"
-
   s.dependency     "YHCategorySDK"
 
-  s.vendored_frameworks = ["Frameworks/*.framework"]
+  s.default_subspecs = 'Default'
+
+  # Default
+  s.subspec 'Default' do |sp|
+	
+    sp.vendored_frameworks = ["Frameworks/YHAlertSDK.framework"]
+
+  end
+
+  # SVP
+  s.subspec 'SVP' do |sp|
+	
+    sp.vendored_frameworks = ["Frameworks/YHSVPAlertSDK.framework"]
+
+    sp.dependency     "SVProgressHUD", "~> 2.1"
+
+  end
   
   end

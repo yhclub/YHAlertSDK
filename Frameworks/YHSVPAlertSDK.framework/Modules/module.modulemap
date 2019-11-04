@@ -1,0 +1,6 @@
+framework module YHAlertSDK {
+  umbrella header "YHAlertSDK.h"
+
+  export *
+  module * { export * }
+}
