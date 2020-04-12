@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define YHISIMPORTSVP  1
+#define YHISIMPORTSVP  0
 
 @interface YHAlertConstant : NSObject
 
@@ -23,8 +23,12 @@ FOUNDATION_EXPORT NSString *YHAlertColorMainBgHexString;
 FOUNDATION_EXPORT NSString *YHAlertColorTitleBgHexString;
 FOUNDATION_EXPORT NSString *YHAlertColorWarmingHexString;
 
-FOUNDATION_EXPORT NSString *YHAlertColorSecondaryHexString;
-FOUNDATION_EXPORT NSString *YHAlertColorSecondaryGrayHexString;
+FOUNDATION_EXPORT NSString *YHAlertColorGreenHexString;
+FOUNDATION_EXPORT NSString *YHAlertColorGreenGrayHexString;
+
+FOUNDATION_EXPORT NSString *YHLoadingLeftSpotColorHexString;
+FOUNDATION_EXPORT NSString *YHLoadingMiddleSpotColorHexString;
+FOUNDATION_EXPORT NSString *YHLoadingRightSpotColorHexString;
 
 //按钮颜色辅色
 FOUNDATION_EXPORT CGFloat   YHAlertDestructiveButtonCornerRadius;

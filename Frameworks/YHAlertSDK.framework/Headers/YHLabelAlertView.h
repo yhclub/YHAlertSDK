@@ -28,15 +28,11 @@ typedef NS_ENUM(NSUInteger, YHLabelAlertMaskType) {
 
 @property(nonatomic,assign)YHLabelAlertMaskType maskType;//样式类型
 
-@property(nonatomic,assign)BOOL isMultipleShow;//是否支持多个显示
+@property(nonatomic,assign)BOOL isLoading;//加载中..
 
 @property(nonatomic,copy)NSString *text;//普通文本
 
 @property(nonatomic,strong)NSMutableAttributedString *attributeText;//消息富文本
-
-@property(nonatomic,assign)BOOL isShow;
-
-@property(nonatomic,assign)BOOL isLoading;//加载中..
 
 @property(nonatomic,copy)NSString *leftImageName;//左边logo图标
 
