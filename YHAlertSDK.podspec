@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/XmYlzYhkj/YHAlertSDK.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/XmYlzYhkj/YHAlertSDK.git", :tag => s.version.to_s,branch => 'dev' }
 
   s.resources    = 'Resources/*.bundle'
 
