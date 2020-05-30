@@ -2,6 +2,16 @@
 YHAlertSDK：弹窗SDK
   
 
+  ## V1.2.3
+
+  2020年05月30日
+
+  ```
+  1、Toast弹窗支持自定义阴影颜色和圆角大小；
+  2、Alert弹窗支持自定义圆角
+  3、设置YHSVProgressHUD_WORK为YES并导入SVProgressHUD即可切换使用SVProgressHUD
+  ```
+
 ## V1.2.2
 
 2020年03月23日
