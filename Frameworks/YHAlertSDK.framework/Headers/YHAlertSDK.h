@@ -1,10 +1,10 @@
 //
 //  YHAlertSDK.h
 //  YHAlertSDK
-//  V 1.0.9
+//  V 1.2.3
 //  Created by zxl on 2018/3/14.
-//  Modify by jagtu on 2019/2/28.
-//  Copyright © 2018年 YH. All rights reserved.
+//  Modify by jagtu on 2020/5/30.
+//  Copyright © 2018年~2020年 YH. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
