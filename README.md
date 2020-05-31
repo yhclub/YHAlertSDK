@@ -1,8 +1,16 @@
 # YHAlertSDK
 YHAlertSDK：弹窗SDK
   
+  
+  ## V1.2.5
 
-  ## V1.2.3
+  2020年05月31日
+
+  ```
+  fix:修复bug，设置loading的颜色
+  ```
+  
+  ## V1.2.4
 
   2020年05月30日
 
