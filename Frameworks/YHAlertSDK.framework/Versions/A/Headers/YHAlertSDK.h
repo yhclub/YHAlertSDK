@@ -1,9 +1,10 @@
 //
 //  YHAlertSDK.h
 //  YHAlertSDK
-//  V 1.2.3
+//  V 1.2.4
 //  Created by zxl on 2018/3/14.
 //  Modify by jagtu on 2020/5/30.
+//  Modify by jagtu on 2020/11/24.
 //  Copyright © 2018年~2020年 YH. All rights reserved.
 //
 //

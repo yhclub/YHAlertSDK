@@ -27,6 +27,7 @@ FOUNDATION_EXPORT NSString *YHAlertColorGreenGrayHexString;
 
 //toast阴影颜色(如有值则所有状态的Toast都一样)
 FOUNDATION_EXPORT NSString *YHToastShadowCustomColorHexString;
+FOUNDATION_EXPORT CGFloat YHToastShadowCustomColorAlpha;
 //toast圆角
 FOUNDATION_EXPORT CGFloat YHToastViewCornerRadius;
 
@@ -59,6 +60,10 @@ FOUNDATION_EXPORT CGFloat YHAlertDestructiveButtonCornerRadius;
 FOUNDATION_EXPORT CGFloat YHAlertCancelButtonCornerRadius;
 FOUNDATION_EXPORT CGFloat YHAlertMainViewCornerRadius;
 
+//字号
+FOUNDATION_EXPORT CGFloat YHAlertTextLabelFont;
+FOUNDATION_EXPORT NSInteger YHToastNumberMax;
+
 FOUNDATION_EXPORT BOOL YHSVProgressHUD_WORK;
 FOUNDATION_EXPORT BOOL YHSVProgressHUDStyleCustom;
 
@@ -77,6 +82,7 @@ typedef NS_ENUM(NSInteger, YHCommonAlertType) {
 
 #define ShowLoading(msg)        [YHCommonHUD showLoading:msg];
 #define ShowClearLoading(msg)   [YHCommonHUD showClearLoading:msg];
+#define CloseLoading()          [YHCommonHUD dismissLoading];
 #define YHDismissLoading()      [YHCommonHUD dismissLoading];
 #define YHDismissLoadingView    [YHCommonHUD dismissLoading];
 
