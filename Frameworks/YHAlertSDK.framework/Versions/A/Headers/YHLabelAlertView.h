@@ -16,17 +16,11 @@ typedef NS_ENUM(NSInteger, YHLabelAlertType) {
     YHLabelAlertTypeGreen = 2//绿
 };
 
-typedef NS_ENUM(NSUInteger, YHLabelAlertMaskType) {
-    YHLabelAlertMaskTypeNone = 1,  // default mask type, allow user interactions while HUD is displayed
-    YHLabelAlertMaskTypeClear,     // don't allow user interactions with background objects
-    YHLabelAlertMaskTypeBlack
-};
-
 @interface YHLabelAlertView : UIView
 
 @property(nonatomic,assign)YHLabelAlertType type;//样式类型
 
-@property(nonatomic,assign)YHLabelAlertMaskType maskType;//样式类型
+@property(nonatomic,assign)YHCommonHUDMaskType maskType;//样式类型
 
 @property(nonatomic,assign)BOOL isLoading;//加载中..
 

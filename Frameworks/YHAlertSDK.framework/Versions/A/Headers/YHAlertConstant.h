@@ -75,6 +75,12 @@ typedef NS_ENUM(NSInteger, YHCommonAlertType) {
     YHCommonAlertTypeWarming = 4 //警告提示框
 };
 
+typedef NS_ENUM(NSUInteger, YHCommonHUDMaskType) {
+    YHCommonHUDMaskTypeNone = 1,  // default mask type, allow user interactions while HUD is displayed
+    YHCommonHUDMaskTypeClear,     // don't allow user interactions with background objects
+    YHCommonHUDMaskTypeBlack
+};
+
 #define ShowMsg(msg)            [YHCommonHUD showAlert:msg];
 #define ShowWarmingAlert(msg)   [YHCommonHUD showWarmingAlert:msg];
 #define ShowFailedMsg(msg)      [YHCommonHUD showFailedAlert:msg];
