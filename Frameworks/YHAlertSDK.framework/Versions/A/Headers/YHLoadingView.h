@@ -24,6 +24,8 @@
 
 @property (nonatomic, assign)BOOL hiddenWhenStop;
 
+@property (nonatomic, assign)CGSize size;
+
 -(void)startAnimation;
 
 -(void)stopAnimating;

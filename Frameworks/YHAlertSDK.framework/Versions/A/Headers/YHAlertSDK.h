@@ -19,6 +19,8 @@ FOUNDATION_EXPORT const unsigned char YHAlertSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <YHAlertSDK/PublicHeader.h>
 
+#import <YHAlertSDK/YHAlertConstant.h>
+
 #import <YHAlertSDK/YHCommonAlertView.h>
 
 #import <YHAlertSDK/YHCommonHUD.h>

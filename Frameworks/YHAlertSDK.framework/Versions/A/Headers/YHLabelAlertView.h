@@ -7,20 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YHAlertConstant.h"
-
-
-typedef NS_ENUM(NSInteger, YHLabelAlertType) {
-    YHLabelAlertTypeBlue = 0,//蓝 提示色
-    YHLabelAlertTypePink = 1,//粉 警示色
-    YHLabelAlertTypeGreen = 2//绿
-};
 
 @interface YHLabelAlertView : UIView
 
-@property(nonatomic,assign)YHLabelAlertType type;//样式类型
+@property(nonatomic,assign)YHAlertLayoutType layoutType;//样式类型
 
 @property(nonatomic,assign)YHCommonHUDMaskType maskType;//样式类型
+
+@property(nonatomic,assign)YHLoadingStyleType loadingStyleType;//加载样式类型
 
 @property(nonatomic,assign)BOOL isLoading;//加载中..
 

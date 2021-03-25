@@ -12,6 +12,31 @@
 
 @interface YHAlertConstant : NSObject
 
+typedef NS_ENUM(NSInteger, YHCommonAlertType) {
+    YHCommonAlertTypeDefault = 0,//Toast
+    YHCommonAlertTypeLoading = 1,//加载中
+    YHCommonAlertTypeSuccess = 2,//成功提示框
+    YHCommonAlertTypeFailed  = 3,//错误提示框
+    YHCommonAlertTypeWarming = 4 //警告提示框
+};
+
+typedef NS_ENUM(NSUInteger, YHCommonHUDMaskType) {
+    YHCommonHUDMaskTypeNone = 1,  // default mask type, allow user interactions while HUD is displayed
+    YHCommonHUDMaskTypeClear,     // don't allow user interactions with background objects
+    YHCommonHUDMaskTypeBlack
+};
+
+typedef NS_ENUM(NSInteger, YHAlertLayoutType) {
+    YHAlertLayoutTypeHorizontal = 0,//水平
+    YHAlertLayoutTypeVertical = 1//竖直
+};
+
+typedef NS_ENUM(NSInteger, YHLoadingStyleType) {
+    YHLoadingStyleTypeDefault = 0,//···
+    YHLoadingStyleTypeCustom = 1//自定义gif图片
+};
+
+
 //-----颜色规范.start-----//
 
 //主色、主灰色
@@ -50,6 +75,7 @@ FOUNDATION_EXPORT NSString *YHAlertTextColorWhiteHexString;
 
 FOUNDATION_EXPORT NSString *YHAlertErrorImageNameString;
 FOUNDATION_EXPORT NSString *YHAlertSuccessImageNameString;
+FOUNDATION_EXPORT NSString *YHAlertLoadingGifImageNameString;
 
 //默认toast持续时长2.2秒
 FOUNDATION_EXPORT CGFloat YHCommonAlertDurationDefault;
@@ -64,22 +90,10 @@ FOUNDATION_EXPORT CGFloat YHAlertMainViewCornerRadius;
 FOUNDATION_EXPORT CGFloat YHAlertTextLabelFont;
 FOUNDATION_EXPORT NSInteger YHToastNumberMax;
 
-FOUNDATION_EXPORT BOOL YHSVProgressHUD_WORK;
-FOUNDATION_EXPORT BOOL YHSVProgressHUDStyleCustom;
+FOUNDATION_EXPORT BOOL YHSVProgressHUD_WORK;    //是否使用SVProgressHUD，默认NO
+FOUNDATION_EXPORT BOOL YHSVProgressHUDStyleCustom;//是否使用内置配置样式，默认YES
+FOUNDATION_EXPORT YHAlertLayoutType YHAlertDefaultLayoutType;
 
-typedef NS_ENUM(NSInteger, YHCommonAlertType) {
-    YHCommonAlertTypeDefault = 0,//Toast
-    YHCommonAlertTypeLoading = 1,//加载中
-    YHCommonAlertTypeSuccess = 2,//成功提示框
-    YHCommonAlertTypeFailed  = 3,//错误提示框
-    YHCommonAlertTypeWarming = 4 //警告提示框
-};
-
-typedef NS_ENUM(NSUInteger, YHCommonHUDMaskType) {
-    YHCommonHUDMaskTypeNone = 1,  // default mask type, allow user interactions while HUD is displayed
-    YHCommonHUDMaskTypeClear,     // don't allow user interactions with background objects
-    YHCommonHUDMaskTypeBlack
-};
 
 #define ShowMsg(msg)            [YHCommonHUD showAlert:msg];
 #define ShowWarmingAlert(msg)   [YHCommonHUD showWarmingAlert:msg];

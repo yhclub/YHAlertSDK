@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YHAlertConstant.h"
 
 @interface YHCommonHUD : NSObject
 
@@ -31,6 +30,9 @@
 
 //设置之前已显示的toast不生效
 +(void)setDefaultMaskType:(YHCommonHUDMaskType)maskType;
++(void)setDefaultLayoutType:(YHAlertLayoutType)layoutType;
++(void)setDefaultStyleType:(YHLoadingStyleType)styleType;
+
 
 +(void)showCommonAlert:(NSString *)message afterDelay:(NSTimeInterval)interval wityType:(YHCommonAlertType)type;
 
