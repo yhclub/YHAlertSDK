@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHAlertSDK"
-  s.version      = "1.2.9" 
+  s.version      = "1.2.11" 
   s.summary      = "YHAlertSDK is only a alert sdk"
 
   s.description  = "YHNetSDK is only a base common alert sdk, incluse svp,label alert"
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   #s.source_files  = "Classes", "Classes/*"
 
-  s.frameworks = 'UIKit', 'Foundation'
+  s.frameworks = ["UIKit", "Foundation", "ImageIO", "MobileCoreServices", "CoreServices"]
   
   s.requires_arc = true
 
