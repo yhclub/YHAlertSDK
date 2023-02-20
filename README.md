@@ -1,7 +1,7 @@
 # YHAlertSDK
 YHAlertSDK：弹窗SDK
   
-  易惠 IOS 通用弹窗
+   IOS 通用弹窗
 
   ## Install
 
